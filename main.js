@@ -23,10 +23,10 @@ isCharge: "Sedang di cas" || "Tidak di cas"
 
 async function starts() {
 	    client.autoReconnect = ReconnectMode.onConnectionLost
-	    client.version = [2, 2143, 3]
-	    client.browserDescription = ["EXTREAM","Ubuntu","18.04"]
+	    client.version = [5, 7623, 9]
+	    client.browserDescription = ["TOBIICHI","Arch","18.04"]
 	    client.logger.level = 'warn'
-	    console.log(color(`]─`,`magenta`),`「`,  color(`EXTREAM`,`red`), `」`,  color(`─[`,`magenta`))
+	    console.log(color(`]─`,`magenta`),`「`,  color(`デート・ア・ライブ`,`red`), `」`,  color(`─[`,`magenta`))
 	    client.on('qr', () => {
 	    console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan Bwang'))
 	    })
@@ -49,7 +49,7 @@ async function starts() {
 		} 
       
        if(joinExtream){
-        teks = `https://chat.whatsapp.com/Jk6TLnLOVGQGlbzh6577Qw`
+        teks = `//none`
         client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
          }
         client.on("group-update", async (anu) => {
